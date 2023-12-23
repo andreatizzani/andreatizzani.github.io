@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrea Tizzani</title>
+    <link>https://andreatizzani.github.io/</link>
+      <atom:link href="https://andreatizzani.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andrea Tizzani</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://andreatizzani.github.io/media/icon_hud7897740661929394b262a5c7c92ab2b_136766_512x512_fill_lanczos_center_3.png</url>
+      <title>Andrea Tizzani</title>
+      <link>https://andreatizzani.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Ballots and Battles: Civic Capital in the Shadow of WWI</title>
+      <link>https://andreatizzani.github.io/project/summer_report/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/project/summer_report/</guid>
+      <description>&lt;p&gt;How do wartime experiences shape civic capital? Investigating the aftermath of World War I in Italy, I uncover the profound impact of this global conflict on civic capital, measured by voter turnout, in Italian municipalities. I employ an empirical strategy and a theoretical model to study the dynamics of this phenomenon. My empirical strategy employs an event-study design, allowing me to quantify the effects of World War I on voter turnout at each national election between 1886 and 1921. On average, the war led to a 10.1% increase in turnout in municipalities that suffered a higher number of military fatalities due to the conflict. This effect consists of both a positive anticipatory effect observed at the 1913 elections and a positive post-event effect. Interestingly, the results reveal a stark regional contrast: Southern municipalities anticipate more with no significant effect post- war, while the North shows the opposite pattern. To shed light on this heterogeneity, I construct a two-period theoretical model. This model uncovers the dynamic nature of voting habits and offers a possible explanation for the observed regional differences. Overall, this study delivers a comprehensive understanding of political behavior in times of crisis, revealing the profound and diverse impacts of the conflict on civic capital.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Valeria Solesin Award 2022</title>
+      <link>https://andreatizzani.github.io/post/solesin/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/post/solesin/</guid>
+      <description>&lt;p&gt;I am thrilled to announce that in 2022, I became one of the proud recipients of the prestigious Valeria Solesin Award, with my &lt;a href=&#34;andreatizzani.github.io/project/summer_report&#34;&gt;Master’s thesis&lt;/a&gt; entitled &amp;ldquo;Women Water and War: A Geospatial Analysis For Gendering Domestic Peace in Africa&amp;rdquo;, a work that delves into the crucial interplay between gender dynamics and civil conflict in continental Africa.&lt;/p&gt;
+&lt;p&gt;The Valeria Solesin Award, named in memory of the Italian researcher tragically lost in the Bataclan massacre of November 13, 2015, honors outstanding Master&amp;rsquo;s dissertations that explore themes around female talent and its pivotal role in shaping economies, ethical frameworks, and meritocratic principles. Valeria, who was conducting her research at the Sorbonne of Paris, devoted her studies to understanding the dual role of women juggling family and professional life.&lt;/p&gt;
+&lt;p&gt;This award symbolizes more than just an academic achievement; it&amp;rsquo;s an embodiment of Valeria&amp;rsquo;s enduring legacy and a testament to the potential of female talent as a cornerstone for socio-economic development.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Finance in Africa 2021</title>
+      <link>https://andreatizzani.github.io/post/financeinafrica/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/post/financeinafrica/</guid>
+      <description>&lt;p&gt;What is the impact of COVID-19 on Africa financing opportunities? How did African banks and businesses cope with the pandemic? The &amp;ldquo;Finance in Africa 2021&amp;rdquo; report gathers insights from 78 leading banks and financing institutions active across Sub-Saharan Africa to examine the impact of the pandemic on banking and business lending, investigate how Africa’s financial sector is harnessing the digital revolution and detail the challenges and opportunities of green finance for banks.&lt;/p&gt;
+&lt;p&gt;Together with Alberto Lemma (ODI) and Judith Tyson (ODI), I contributed to the fifth chapter of the report, investigating the &amp;ldquo;Greening Africa’s financial sector during crisis recovery&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Women, Water and War: A Geospatial Analysis for Gendering Domestic Peace in Africa</title>
+      <link>https://andreatizzani.github.io/project/master_thesis/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/project/master_thesis/</guid>
+      <description>&lt;p&gt;Can gender roles and gender equality explain the incidence and brutality of armed conflicts? While qualitative studies have long recognized the impact of unequal gender roles on violence, no empirical study has already explored this relationship. Feminist scholars in international relations have recently made a stand to affirm how the juxtaposition of privileged masculinity and “devalorized” femininity can contribute to explaining the patterns of violence. Indeed, as the sociologist Johan Galtung explains, the mutual relationship between structural and cultural violence helps in understanding how gender-related inequalities can become inescapable rationalizations of war-initiation. In this regard, this essay aims at quantitatively investigating whether the intra-regional level of gender equality has an impact on the occurrence of internal conflicts and the number of battle-related deaths. I collect fine-grained geographical data on conflict and gender norms from 29 countries of continental Africa. Estimates from a spatial autoregressive model SARAR (1,1), with the GS2SLS estimator and an endogenous regressor, indicate that higher gender equality leads to less brutal (but not fewer) conflicts. To establish causality, I exploit the distance to the closest water spring as an instrument for gender roles, by relying on Ester Boserup’s theory of the role of women in human development. Indeed, collecting water is a traditionally female occupation and women have been used to carry heavy loads over long and winding routes, taking away valuable time from income-generating jobs and education.  IV estimates confirm that improvements in gender equality reduce the brutality but not the incidence of conflicts: a 1 standard deviation increase in gender equality results in 0.21 s.d. less fatalities in conflicts. Finally, a robustness check is performed: conflicts targeting women are excluded from the sample. It addresses the issue that regions characterized by a lower level of gender equality might be also the ones reporting a higher number of violent conflicts because the nature of such disputes is gender-related per se. Contrary to this claim, the exclusion of these conflicts produces an equally strong estimate of the impact of the gender dimension on the number of conflict-related deaths.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://andreatizzani.github.io/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://andreatizzani.github.io/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://andreatizzani.github.io/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://andreatizzani.github.io/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://andreatizzani.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

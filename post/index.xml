@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Andrea Tizzani</title>
+    <link>https://andreatizzani.github.io/post/</link>
+      <atom:link href="https://andreatizzani.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 26 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://andreatizzani.github.io/media/icon_hud7897740661929394b262a5c7c92ab2b_136766_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://andreatizzani.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Valeria Solesin Award 2022</title>
+      <link>https://andreatizzani.github.io/post/solesin/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/post/solesin/</guid>
+      <description>&lt;p&gt;I am thrilled to announce that in 2022, I became one of the proud recipients of the prestigious Valeria Solesin Award, with my &lt;a href=&#34;andreatizzani.github.io/project/summer_report&#34;&gt;Master’s thesis&lt;/a&gt; entitled &amp;ldquo;Women Water and War: A Geospatial Analysis For Gendering Domestic Peace in Africa&amp;rdquo;, a work that delves into the crucial interplay between gender dynamics and civil conflict in continental Africa.&lt;/p&gt;
+&lt;p&gt;The Valeria Solesin Award, named in memory of the Italian researcher tragically lost in the Bataclan massacre of November 13, 2015, honors outstanding Master&amp;rsquo;s dissertations that explore themes around female talent and its pivotal role in shaping economies, ethical frameworks, and meritocratic principles. Valeria, who was conducting her research at the Sorbonne of Paris, devoted her studies to understanding the dual role of women juggling family and professional life.&lt;/p&gt;
+&lt;p&gt;This award symbolizes more than just an academic achievement; it&amp;rsquo;s an embodiment of Valeria&amp;rsquo;s enduring legacy and a testament to the potential of female talent as a cornerstone for socio-economic development.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Finance in Africa 2021</title>
+      <link>https://andreatizzani.github.io/post/financeinafrica/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://andreatizzani.github.io/post/financeinafrica/</guid>
+      <description>&lt;p&gt;What is the impact of COVID-19 on Africa financing opportunities? How did African banks and businesses cope with the pandemic? The &amp;ldquo;Finance in Africa 2021&amp;rdquo; report gathers insights from 78 leading banks and financing institutions active across Sub-Saharan Africa to examine the impact of the pandemic on banking and business lending, investigate how Africa’s financial sector is harnessing the digital revolution and detail the challenges and opportunities of green finance for banks.&lt;/p&gt;
+&lt;p&gt;Together with Alberto Lemma (ODI) and Judith Tyson (ODI), I contributed to the fifth chapter of the report, investigating the &amp;ldquo;Greening Africa’s financial sector during crisis recovery&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
