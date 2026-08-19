@@ -9,7 +9,7 @@
   <script>
   try {
     var _t = localStorage.getItem('theme');
-    if (_t === 'blue' || _t === 'night' || _t === 'green') { document.documentElement.dataset.theme = _t; }
+    if (_t === 'blue' || _t === 'night') { document.documentElement.dataset.theme = _t; }
     else if (!_t) {
       // no explicit choice yet: follow the visitor's night — device dark mode or local evening hours
       var _h = new Date().getHours();
@@ -32,11 +32,10 @@
     <div class="brand">
       <a class="wordmark" href="#top">Andrea Tizzani</a>
       <div class="theme-picker-group">
-        <span class="theme-hint">choose the theme you like&nbsp;—</span>
+        <span class="theme-hint">choose the theme you like</span>
         <div class="theme-picker" role="group" aria-label="Color theme">
           <button class="theme-dot" data-set="classic" title="Terracotta theme" aria-label="Terracotta theme"></button>
           <button class="theme-dot" data-set="blue" title="Blue theme" aria-label="Blue theme"></button>
-          <button class="theme-dot" data-set="green" title="Green theme" aria-label="Green theme"></button>
           <button class="theme-dot" data-set="night" title="Night theme" aria-label="Night theme"></button>
         </div>
       </div>
@@ -89,17 +88,17 @@
         </div>
 
         <div class="bio">
-          <p class="lede">I'm an applied microeconomist working at the intersection of political
-          economy and economic history. My research asks how social identities become collective
-          forces: how people coordinate around identities, and how this coordination shapes
-          political, economic, and social change.</p>
-
-          <p>I am a PhD researcher at the
+          <p class="lede">I am a PhD researcher at the
           <a href="https://www.eui.eu/people?id=andrea-tizzani">European University Institute</a>,
           under the supervision of
           <a href="https://sites.google.com/site/alessandrotarozzi/home">Alessandro Tarozzi</a> and
-          <a href="http://www.andreaichino.it">Andrea Ichino</a>.
-          I hold a joint Master's degree in Economics and Political Science from
+          <a href="http://www.andreaichino.it">Andrea Ichino</a>.</p>
+
+          <p>I work at the intersection of political economy and economic history. My research
+          asks how social identities become collective forces: how people coordinate around
+          identities, and how this coordination shapes political, economic, and social change.</p>
+
+          <p>I hold a joint Master's degree in Economics and Political Science from
           <a href="https://www.unibocconi.eu">Bocconi University</a> and
           <a href="https://www.sciencespo.fr/en/">Sciences Po Paris</a>, and I previously worked as a
           Pre-Doctoral Fellow in Economics at the
@@ -114,7 +113,7 @@
         <div class="interests">
           <span>Political Economy</span>
           <span>Economic History</span>
-          <span>Gender Economics</span>
+          <span>Gender</span>
           <span>Development Economics</span>
         </div>
 
@@ -192,7 +191,7 @@
             <img class="paper-icon icon-ink" src="assets/icon_news_ink.png" alt="Line drawing of a folded newspaper">
             <img class="paper-icon icon-night" src="assets/icon_news_night.png" alt="" aria-hidden="true">
           </div>
-          <p class="coauthors">with Thomas Taylor</p>
+          <p class="coauthors">with <a href="https://thomastaylor-econ.github.io">Thomas Taylor</a></p>
           <details class="abs">
             <summary>Abstract</summary>
             <div class="abstract">
