@@ -9,7 +9,7 @@
   <script>
   try {
     var _t = localStorage.getItem('theme');
-    if (_t === 'blue' || _t === 'night') { document.documentElement.dataset.theme = _t; }
+    if (_t === 'blue' || _t === 'night' || _t === 'green') { document.documentElement.dataset.theme = _t; }
     else if (!_t) {
       // no explicit choice yet: follow the visitor's night — device dark mode or local evening hours
       var _h = new Date().getHours();
@@ -29,18 +29,24 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="wordmark" href="#top">Andrea Tizzani</a>
+    <div class="brand">
+      <a class="wordmark" href="#top">Andrea Tizzani</a>
+      <div class="theme-picker-group">
+        <span class="theme-hint">choose the theme you like&nbsp;—</span>
+        <div class="theme-picker" role="group" aria-label="Color theme">
+          <button class="theme-dot" data-set="classic" title="Terracotta theme" aria-label="Terracotta theme"></button>
+          <button class="theme-dot" data-set="blue" title="Blue theme" aria-label="Blue theme"></button>
+          <button class="theme-dot" data-set="green" title="Green theme" aria-label="Green theme"></button>
+          <button class="theme-dot" data-set="night" title="Night theme" aria-label="Night theme"></button>
+        </div>
+      </div>
+    </div>
     <nav class="main-nav">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
       <a href="#news">News</a>
-      <a href="files/Tizzani_CV.pdf">CV</a>
-      <div class="theme-picker" role="group" aria-label="Color theme">
-        <button class="theme-dot" data-set="classic" title="Terracotta theme" aria-label="Terracotta theme"></button>
-        <button class="theme-dot" data-set="blue" title="Blue theme" aria-label="Blue theme"></button>
-        <button class="theme-dot" data-set="night" title="Night theme" aria-label="Night theme"></button>
-      </div>
+      <a href="files/Tizzani_CV.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
   </div>
 </header>
@@ -62,7 +68,7 @@
         <div class="contact-links">
           <a href="https://www.eui.eu/people?id=andrea-tizzani">EUI Profile</a>
           <a href="https://www.linkedin.com/in/andrea-tizzani-717420397">LinkedIn</a>
-          <a href="files/Tizzani_CV.pdf">CV</a>
+          <a href="files/Tizzani_CV.pdf" target="_blank" rel="noopener">CV</a>
         </div>
         <nav class="side-nav" aria-label="Sections">
           <a href="#about">About</a>
@@ -70,8 +76,6 @@
           <a href="#teaching">Teaching</a>
           <a href="#news">News</a>
         </nav>
-        <p class="archive-note">The backdrop is a nineteenth-century map of the
-        Roman countryside, photographed during my archival research.</p>
       </div>
     </aside>
 
@@ -305,7 +309,7 @@
         </div>
 
         <div class="news-item">
-          <span class="news-date">2024</span>
+          <span class="news-date">Jun 2024</span>
           <p>"The Paradox of Charisma" received the
           <a href="https://www.eui.eu/news-hub?id=andrea-tizzani-and-rodolfo-salonia-receive-eco-second-year-prize-2024">EUI Second-Year Best Paper Award</a>.</p>
         </div>
