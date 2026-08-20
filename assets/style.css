@@ -153,24 +153,30 @@ body.home { position: relative; }
 .map-veil {
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 900px;
+  height: 1250px;
   background-image: url("map.jpg");
   background-size: cover;
-  background-position: 52% 36%;   /* keeps Roma in view */
+  background-position: 52% 30%;   /* keeps Roma in view */
   pointer-events: none;
   z-index: 0;
+  /* ease-out fade: full band under the header, quick drop before the name,
+     then a long soft tail that lingers far down the page */
   -webkit-mask-image: linear-gradient(to bottom,
-      black 0%, black 22%,
-      rgba(0,0,0,.4) 32%,
-      rgba(0,0,0,.26) 48%,
-      rgba(0,0,0,.12) 66%,
-      transparent 87%);
+      black 0%, black 13%,
+      rgba(0,0,0,.38) 19%,
+      rgba(0,0,0,.2) 26%,
+      rgba(0,0,0,.13) 38%,
+      rgba(0,0,0,.08) 55%,
+      rgba(0,0,0,.04) 72%,
+      transparent 93%);
           mask-image: linear-gradient(to bottom,
-      black 0%, black 22%,
-      rgba(0,0,0,.4) 32%,
-      rgba(0,0,0,.26) 48%,
-      rgba(0,0,0,.12) 66%,
-      transparent 87%);
+      black 0%, black 13%,
+      rgba(0,0,0,.38) 19%,
+      rgba(0,0,0,.2) 26%,
+      rgba(0,0,0,.13) 38%,
+      rgba(0,0,0,.08) 55%,
+      rgba(0,0,0,.04) 72%,
+      transparent 93%);
 }
 
 body.home .page { padding-top: 7rem; }
@@ -535,7 +541,7 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
 /* ---------- responsive ---------- */
 
 @media (max-width: 820px) {
-  .map-veil { height: 480px; }
+  .map-veil { height: 640px; }
   body.home .content-col { padding-top: 0; }
   .home-grid { display: flex; flex-direction: column; gap: 2.4rem; }
   .portrait-col { position: static; max-width: 300px; margin: 0 auto; text-align: center; }
@@ -622,6 +628,7 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
   transform: scale(1.1);
   box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink-soft);
 }
-.theme-dot[data-set="classic"] { background: #99392c; }
-.theme-dot[data-set="blue"]    { background: #336699; }
-.theme-dot[data-set="night"]   { background: #211e1b; border-color: rgba(255,255,255,.25); }
+/* each dot shows its theme's pairing: accent + paper */
+.theme-dot[data-set="classic"] { background: linear-gradient(135deg, #99392c 50%, #faf7f1 50%); }
+.theme-dot[data-set="blue"]    { background: linear-gradient(135deg, #336699 50%, #faf7f1 50%); }
+.theme-dot[data-set="night"]   { background: linear-gradient(135deg, #d99672 50%, #1c1a18 50%); }
