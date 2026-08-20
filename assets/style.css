@@ -616,19 +616,24 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
   align-items: center;
 }
 .theme-dot {
-  width: 15px; height: 15px;
-  border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.18);
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 18px; height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 32, 28, .25);
   padding: 0;
+  margin: 0;
   cursor: pointer;
-  transition: transform .2s ease, box-shadow .2s ease;
+  background-origin: border-box;
+  transition: transform .15s ease, border-color .15s ease;
 }
-.theme-dot:hover { transform: scale(1.25); }
-.theme-dot.active {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink-soft);
-}
-/* each dot shows its theme's pairing: accent + paper */
-.theme-dot[data-set="classic"] { background: linear-gradient(135deg, #99392c 50%, #faf7f1 50%); }
-.theme-dot[data-set="blue"]    { background: linear-gradient(135deg, #336699 50%, #faf7f1 50%); }
-.theme-dot[data-set="night"]   { background: linear-gradient(135deg, #d99672 50%, #1c1a18 50%); }
+.theme-dot:hover { transform: translateY(-1px); border-color: rgba(33, 32, 28, .55); }
+.theme-dot.active { border: 2px solid var(--ink); }
+[data-theme="night"] .theme-dot { border-color: rgba(233, 227, 214, .3); }
+[data-theme="night"] .theme-dot:hover { border-color: rgba(233, 227, 214, .6); }
+[data-theme="night"] .theme-dot.active { border-color: var(--ink); }
+/* each chip shows its theme's pairing: accent + paper */
+.theme-dot[data-set="classic"] { background: linear-gradient(135deg, #99392c 49%, #faf7f1 51%); }
+.theme-dot[data-set="blue"]    { background: linear-gradient(135deg, #336699 49%, #faf7f1 51%); }
+.theme-dot[data-set="night"]   { background: linear-gradient(135deg, #d99672 49%, #1c1a18 51%); }
