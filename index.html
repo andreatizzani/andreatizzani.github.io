@@ -32,12 +32,20 @@
   <div class="header-inner">
     <div class="brand">
       <a class="wordmark" href="#top">Andrea Tizzani</a>
-      <div class="theme-picker-group">
-        <span class="theme-hint">choose the theme you like</span>
-        <div class="theme-picker" role="group" aria-label="Color theme">
-          <button class="theme-dot" data-set="classic" title="Terracotta theme" aria-label="Terracotta theme"></button>
-          <button class="theme-dot" data-set="night" title="Night theme" aria-label="Night theme"></button>
-        </div>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button class="theme-btn" data-set="classic" title="Day theme" aria-label="Day theme" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>
+          </svg>
+          <span>Day</span>
+        </button>
+        <button class="theme-btn" data-set="night" title="Night theme" aria-label="Night theme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/>
+          </svg>
+          <span>Night</span>
+        </button>
       </div>
     </div>
     <nav class="main-nav">
@@ -377,10 +385,14 @@
 
 <script>
 (function () {
-  var dots = document.querySelectorAll('.theme-dot');
+  var dots = document.querySelectorAll('.theme-btn');
   function mark() {
     var cur = document.documentElement.dataset.theme || 'classic';
-    dots.forEach(function (d) { d.classList.toggle('active', d.dataset.set === cur); });
+    dots.forEach(function (d) {
+      var on = d.dataset.set === cur;
+      d.classList.toggle('active', on);
+      d.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
   }
   dots.forEach(function (d) {
     d.addEventListener('click', function () {

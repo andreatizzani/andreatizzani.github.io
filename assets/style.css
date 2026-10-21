@@ -596,38 +596,45 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
   opacity: .55;
 }
 
-/* ---------- theme picker: two swatch dots ---------- */
+/* ---------- theme switch: day / night ---------- */
 
-.brand { display: flex; align-items: baseline; gap: 1.4rem; flex-wrap: wrap; }
-.theme-picker-group { display: flex; align-items: center; gap: .55rem; }
-.theme-hint {
-  font-style: italic;
-  font-size: .82rem;
-  color: var(--ink-faint);
-}
-.theme-picker {
-  display: flex;
-  gap: .55rem;
+.brand { display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; }
+
+.theme-switch {
+  display: inline-flex;
   align-items: center;
+  padding: 2px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper-deep);
 }
-.theme-dot {
+.theme-btn {
   -webkit-appearance: none;
   appearance: none;
-  display: block;
-  width: 18px; height: 18px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 32, 28, .25);
-  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .38rem;
   margin: 0;
+  padding: .28rem .7rem .28rem .55rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-faint);
+  font-family: var(--serif-text);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  line-height: 1;
   cursor: pointer;
-  background-origin: border-box;
-  transition: transform .15s ease, border-color .15s ease;
+  transition: color .15s ease, background .15s ease;
 }
-.theme-dot:hover { transform: translateY(-1px); border-color: rgba(33, 32, 28, .55); }
-.theme-dot.active { border: 2px solid var(--ink); }
-[data-theme="night"] .theme-dot { border-color: rgba(233, 227, 214, .3); }
-[data-theme="night"] .theme-dot:hover { border-color: rgba(233, 227, 214, .6); }
-[data-theme="night"] .theme-dot.active { border-color: var(--ink); }
-/* each chip shows its theme's pairing: accent + paper */
-.theme-dot[data-set="classic"] { background: linear-gradient(135deg, #99392c 49%, #faf7f1 51%); }
-.theme-dot[data-set="night"]   { background: linear-gradient(135deg, #d99672 49%, #1c1a18 51%); }
+.theme-btn svg { width: 14px; height: 14px; flex: none; }
+.theme-btn:hover { color: var(--accent); }
+.theme-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+}
+.theme-btn.active:hover { color: var(--paper); }
+.theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
