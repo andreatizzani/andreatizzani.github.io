@@ -74,6 +74,7 @@
           <a href="#research">Research</a>
           <a href="#teaching">Teaching</a>
           <a href="#news">News</a>
+          <a href="files/Tizzani_CV.pdf" target="_blank" rel="noopener">CV</a>
         </nav>
       </div>
     </aside>
@@ -391,6 +392,35 @@
     });
   });
   mark();
+})();
+</script>
+
+<script>
+(function () {
+  // scroll-spy: bold the current section in the header nav and the sidebar nav
+  var sections = ['about', 'research', 'teaching', 'news']
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+  var links = document.querySelectorAll('nav.main-nav a[href^="#"], .side-nav a[href^="#"]');
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function update() {
+    ticking = false;
+    if (!sections.length) return;
+    var line = (header ? header.offsetHeight : 0) + 24;
+    var cur = sections[0].id;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].getBoundingClientRect().top - line <= 0) { cur = sections[i].id; }
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      cur = sections[sections.length - 1].id;
+    }
+    links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
 })();
 </script>
 
