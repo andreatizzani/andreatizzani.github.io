@@ -18,7 +18,7 @@ stubs so those addresses also work.
 | `research.html`, `teaching.html`, `news.html` | Redirects to the matching section of `index.html` |
 | `assets/style.css` | All styling (colors, fonts, layout) |
 | `assets/fonts/` | Latin Modern Roman webfonts (self-hosted) |
-| `assets/portrait.png` | Profile photo (transparent background) |
+| `assets/portrait_2026.png` | Profile photo (transparent background) |
 | `assets/map.jpg` | Archival map used as the homepage backdrop |
 | `files/Tizzani_CV.pdf` | CV linked from the nav |
 | `CNAME` | Custom domain for GitHub Pages — do not delete |
