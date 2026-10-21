@@ -10,8 +10,8 @@
   <script>
   try {
     var _t = localStorage.getItem('theme');
-    if (_t === 'blue' || _t === 'night') { document.documentElement.dataset.theme = _t; }
-    else if (!_t) {
+    if (_t === 'night') { document.documentElement.dataset.theme = _t; }
+    else if (_t !== 'classic') {
       // no explicit choice yet: follow the visitor's night — device dark mode or local evening hours
       var _h = new Date().getHours();
       if (_h >= 20 || _h < 7 || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -36,7 +36,6 @@
         <span class="theme-hint">choose the theme you like</span>
         <div class="theme-picker" role="group" aria-label="Color theme">
           <button class="theme-dot" data-set="classic" title="Terracotta theme" aria-label="Terracotta theme"></button>
-          <button class="theme-dot" data-set="blue" title="Blue theme" aria-label="Blue theme"></button>
           <button class="theme-dot" data-set="night" title="Night theme" aria-label="Night theme"></button>
         </div>
       </div>

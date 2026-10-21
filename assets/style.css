@@ -565,16 +565,6 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
    Themes
    ========================================================== */
 
-/* --- soft blue: all blue tones --- */
-[data-theme="blue"] {
-  --accent:      #336699;
-  --accent-deep: #274e73;
-  --link-underline: #aac4da;
-  --selection:   #d7e4f0;
-  --badge-ink:   #274e73;
-  --btn-border:  #a9c4dc;
-  --flash-bg:    rgba(51, 102, 153, .06);
-}
 
 /* --- night: warm dark, easy on the eyes --- */
 [data-theme="night"] {
@@ -601,7 +591,7 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
   opacity: .55;
 }
 
-/* ---------- theme picker: three swatch dots ---------- */
+/* ---------- theme picker: two swatch dots ---------- */
 
 .brand { display: flex; align-items: baseline; gap: 1.4rem; flex-wrap: wrap; }
 .theme-picker-group { display: flex; align-items: center; gap: .55rem; }
@@ -635,5 +625,4 @@ blockquote.pull footer { font-size: .85rem; font-style: normal; letter-spacing: 
 [data-theme="night"] .theme-dot.active { border-color: var(--ink); }
 /* each chip shows its theme's pairing: accent + paper */
 .theme-dot[data-set="classic"] { background: linear-gradient(135deg, #99392c 49%, #faf7f1 51%); }
-.theme-dot[data-set="blue"]    { background: linear-gradient(135deg, #336699 49%, #faf7f1 51%); }
 .theme-dot[data-set="night"]   { background: linear-gradient(135deg, #d99672 49%, #1c1a18 51%); }
